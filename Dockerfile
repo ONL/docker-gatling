@@ -33,4 +33,4 @@ COPY --from=builder /opt/diet/bin/ /opt/
 COPY --from=builder /root/dumb-init /opt/dumb-init
 
 ENTRYPOINT ["/opt/dumb-init", "--"]
-CMD ["/opt/gatling", "-a -D -c /var/www"]
+CMD ["/opt/gatling -a -D -c /var/www"]
