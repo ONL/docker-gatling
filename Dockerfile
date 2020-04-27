@@ -30,7 +30,7 @@ RUN wget -O /root/dumb-init https://github.com/Yelp/dumb-init/releases/download/
 
 FROM alpine
 COPY --from=builder /opt/diet/bin/ /opt/
-COPY --from=builder /opt/dumb-init
+COPY --from=builder /opt/dumb-init /opt/dumb-init
 
 ENTRYPOINT ["/opt/dumb-init", "--"]
 CMD ["/opt/gatling", "-a -D -c /var/www"]
