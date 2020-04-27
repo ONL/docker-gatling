@@ -4,6 +4,8 @@ Fefe's Gatling HTTP Server as Docker Image, see https://www.fefe.de/gatling for 
 ## HTTP Server
 `docker run -v /var/www:/var/www -p 80:80 -p 443:443 paulritter/gatling`
 
+Keep in mind, that gatling will only serve world-readable files!
+
 ### Virtual Domains
 See http://www.acme.com/software/thttpd/thttpd_man.html#MULTIHOMING for details.
 
