@@ -35,4 +35,4 @@ COPY --from=builder /root/dumb-init /opt/dumb-init
 WORKDIR /var/www
 
 ENTRYPOINT ["/opt/dumb-init", "--"]
-CMD ["/opt/gatling", "-a -D -c /var/www"]
+CMD ["/opt/gatling", "-a", "-D", "-c /var/www"]
