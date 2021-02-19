@@ -26,7 +26,7 @@ RUN make && make install
 WORKDIR /root/gatling
 RUN make && make install
 
-RUN wget -O /root/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_x86_64 && chmod 0555 /root/dumb-init
+RUN wget -O /root/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64 && chmod 0555 /root/dumb-init
 
 FROM alpine
 COPY --from=builder /opt/diet/bin/ /opt/
